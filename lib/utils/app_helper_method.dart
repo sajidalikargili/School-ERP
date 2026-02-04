@@ -1,0 +1,22 @@
+import 'package:school_erp/data/item_model.dart';
+import 'package:school_erp/utils/app_assets.dart';
+import 'package:school_erp/utils/app_constants.dart';
+
+class HelperMethod{
+ static   List<ItemModel> getItemList(){
+    return [
+      ItemModel(icon:AppAssets.play_Quize, name: 'Play Quize'),
+      ItemModel(icon:AppAssets.Assigment , name: 'Assigment'),
+      ItemModel(icon:AppAssets.school_Holiday , name: 'School Holiday'),
+      ItemModel(icon:AppAssets.time_Table , name: 'Time Table'),
+      ItemModel(icon:AppAssets.Result, name: 'Result'),
+      ItemModel(icon:AppAssets.date_Sheet, name: 'Date Sheet'),
+      ItemModel(icon:AppAssets.ask_Doubts, name: 'Ask Doubts'),
+      ItemModel(icon:AppAssets.school_Gallery, name: 'School Gallery'),
+      ItemModel(icon:AppAssets.leave_Application, name: 'Leave Application'),
+      ItemModel(icon:AppAssets.change_Password, name: 'Change Password'),
+      ItemModel(icon: AppAssets.Events, name: 'Events'),
+      ItemModel(icon:AppAssets.Logout, name: 'Logout'),
+    ];
+  }
+}
