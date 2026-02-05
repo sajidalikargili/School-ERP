@@ -18,6 +18,8 @@ static const String leave_Application='$png/ic_leave.png';
 static const String change_Password='$png/ic_password.png';
 static const String Events='$png/ic_event.png';
 static const String Logout='$png/ic_logout.png';
+// attendance screen image
+static const String desgin_bg='$png/desgin_bg.png';
 
 }
 

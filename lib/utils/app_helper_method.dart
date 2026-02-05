@@ -1,3 +1,4 @@
+import 'package:school_erp/data/history_model.dart';
 import 'package:school_erp/data/item_model.dart';
 import 'package:school_erp/utils/app_assets.dart';
 import 'package:school_erp/utils/app_constants.dart';
@@ -18,5 +19,25 @@ class HelperMethod{
       ItemModel(icon: AppAssets.Events, name: 'Events'),
       ItemModel(icon:AppAssets.Logout, name: 'Logout'),
     ];
+  }
+  static List<HistoryModel> getHistList(){
+   return [
+     HistoryModel(
+       specialDay: 'Women Day',
+       date: '20-4-3020',
+       day: 'Monday',
+     ),
+     HistoryModel(
+       specialDay: 'Kashmir Day',
+       date: '20-4-1956',
+       day: 'Friday',
+     ),
+     HistoryModel(
+       specialDay: 'Independence Day',
+       date: '14-8-1947',
+       day: 'Thursday',
+     ),
+
+   ];
   }
 }
