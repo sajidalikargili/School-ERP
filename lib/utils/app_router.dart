@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:school_erp/presentation/pages/dasboard_page.dart';
 import 'package:school_erp/presentation/pages/home_page.dart';
+import 'package:school_erp/presentation/pages/online_pay_page.dart';
+import 'package:school_erp/presentation/pages/play_quize.dart';
 import 'package:school_erp/presentation/pages/practise_page.dart';
 import 'package:school_erp/presentation/pages/signIn_page.dart';
 import 'package:school_erp/presentation/pages/splash_page.dart';
@@ -18,7 +20,9 @@ class AppNavigator{
         GoRoute(path: AppRoute.splashPage.path,name: AppRoute.splashPage.name,builder: (context,state)=>SplashPages()),
         GoRoute(path: AppRoute.homePage.path,name: AppRoute.homePage.name,builder: (context,state)=>HomePage()),
         GoRoute(path: AppRoute.dashboardPage.path,name: AppRoute.dashboardPage.name,builder: (context,state)=>DasboardPage()),
-        GoRoute(path: AppRoute.practisePage.path,name: AppRoute.practisePage.name,builder: (context,state)=>PractisePage())
+        GoRoute(path: AppRoute.practisePage.path,name: AppRoute.practisePage.name,builder: (context,state)=>PractisePage()),
+        GoRoute(path: AppRoute.onlinepayPage.path,name: AppRoute.onlinepayPage.name,builder: (context,state)=>OnlinePayPage()),
+        GoRoute(path: AppRoute.playquizePage.path,name: AppRoute.playquizePage.name,builder: (context,state)=>PlayQuizePage())
 
       ]);
 
@@ -30,6 +34,8 @@ extension PathName on AppRoute{
     AppRoute.homePage=>'/home',
     AppRoute.dashboardPage=>'/dashboard',
     AppRoute.practisePage=>'/practise',
+  AppRoute.onlinepayPage=>'/onlinepay',
+  AppRoute.playquizePage=>'/playquize'
 
   };
   // String get name => switch(this){
@@ -45,5 +51,7 @@ enum AppRoute{
   signInPage,
   homePage,
   dashboardPage,
-  practisePage
+  practisePage,
+  onlinepayPage,
+  playquizePage
 }
