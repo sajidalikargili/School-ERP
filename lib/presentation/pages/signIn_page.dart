@@ -134,7 +134,7 @@ class _SigninPagesState extends State<SigninPages> {
                             backgroundColor: AppColors.bgColor
                           ),
                           onPressed: () {
-                            context.goNamed(AppRoute.homePage.name);
+                            context.goNamed(AppRoute.playquizePage.name);
                           },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,

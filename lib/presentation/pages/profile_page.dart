@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:school_erp/presentation/pages/form_one.dart';
+import 'package:school_erp/presentation/widgets/form_one.dart';
 import 'package:school_erp/presentation/widgets/profile_container.dart';
 import 'package:school_erp/utils/app_colors.dart';
 import 'package:school_erp/utils/app_styles.dart';

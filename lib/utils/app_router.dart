@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:school_erp/presentation/pages/dasboard_page.dart';
 import 'package:school_erp/presentation/pages/home_page.dart';
 import 'package:school_erp/presentation/pages/online_pay_page.dart';
-import 'package:school_erp/presentation/pages/play_quize.dart';
+import 'package:school_erp/presentation/pages/play_quize_page.dart';
 import 'package:school_erp/presentation/pages/practise_page.dart';
 import 'package:school_erp/presentation/pages/signIn_page.dart';
 import 'package:school_erp/presentation/pages/splash_page.dart';

@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:school_erp/data/history_model.dart';
 import 'package:school_erp/data/item_model.dart';
+import 'package:school_erp/data/question_model.dart';
 import 'package:school_erp/utils/app_assets.dart';
 import 'package:school_erp/utils/app_constants.dart';
 
@@ -38,6 +41,14 @@ class HelperMethod{
        day: 'Thursday',
      ),
 
+   ];
+  }
+  static List<QuestionModel> getQuestionList(){
+   return [
+     QuestionModel(title: 'A.Stefai Taylor'),
+     QuestionModel(title: 'B.Methali Raj', icon:   Icons.check_circle, color: Colors.green),
+     QuestionModel(title: 'C.Suzeai Bashes', icon:   Icons.check_circle, color: Colors.red),
+     QuestionModel(title: 'D.Harmanpreet Kaure'),
    ];
   }
 }
