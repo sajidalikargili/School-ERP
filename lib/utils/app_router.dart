@@ -1,12 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:school_erp/presentation/pages/assigment_page.dart';
 import 'package:school_erp/presentation/pages/dasboard_page.dart';
+import 'package:school_erp/presentation/pages/date_sheet_page.dart';
 import 'package:school_erp/presentation/pages/home_page.dart';
 import 'package:school_erp/presentation/pages/online_pay_page.dart';
 import 'package:school_erp/presentation/pages/play_quize_page.dart';
 import 'package:school_erp/presentation/pages/practise_page.dart';
+import 'package:school_erp/presentation/pages/result_page.dart';
 import 'package:school_erp/presentation/pages/signIn_page.dart';
 import 'package:school_erp/presentation/pages/splash_page.dart';
+import 'package:school_erp/presentation/pages/time_table_page.dart';
 
 class AppNavigator{
   AppNavigator._();
@@ -22,7 +26,11 @@ class AppNavigator{
         GoRoute(path: AppRoute.dashboardPage.path,name: AppRoute.dashboardPage.name,builder: (context,state)=>DasboardPage()),
         GoRoute(path: AppRoute.practisePage.path,name: AppRoute.practisePage.name,builder: (context,state)=>PractisePage()),
         GoRoute(path: AppRoute.onlinepayPage.path,name: AppRoute.onlinepayPage.name,builder: (context,state)=>OnlinePayPage()),
-        GoRoute(path: AppRoute.playquizePage.path,name: AppRoute.playquizePage.name,builder: (context,state)=>PlayQuizePage())
+        GoRoute(path: AppRoute.playquizePage.path,name: AppRoute.playquizePage.name,builder: (context,state)=>PlayQuizePage()),
+        GoRoute(path: AppRoute.resultPage.path,name: AppRoute.resultPage.name,builder: (context,state)=>ResultPage()),
+        GoRoute(path: AppRoute.datesheetPage.path,name: AppRoute.datesheetPage.name,builder: (context,state)=>DateSheetPage()),
+        GoRoute(path: AppRoute.timetablePage.path,name: AppRoute.timetablePage.name,builder: (context,state)=>TimeTablePage()),
+        GoRoute(path: AppRoute.assigmentPage.path,name: AppRoute.assigmentPage.name,builder: (context,state)=>AssigmentPage()),
 
       ]);
 
@@ -34,8 +42,13 @@ extension PathName on AppRoute{
     AppRoute.homePage=>'/home',
     AppRoute.dashboardPage=>'/dashboard',
     AppRoute.practisePage=>'/practise',
-  AppRoute.onlinepayPage=>'/onlinepay',
-  AppRoute.playquizePage=>'/playquize'
+   AppRoute.onlinepayPage=>'/onlinepay',
+   AppRoute.playquizePage=>'/playquize',
+    AppRoute.assigmentPage=>'/assigment',
+    AppRoute.resultPage=>'/result',
+   AppRoute.timetablePage=>'/timetable',
+    AppRoute.datesheetPage=>'/datesheet',
+
 
   };
   // String get name => switch(this){
@@ -53,5 +66,9 @@ enum AppRoute{
   dashboardPage,
   practisePage,
   onlinepayPage,
-  playquizePage
+  playquizePage,
+  assigmentPage,
+  resultPage,
+  timetablePage,
+  datesheetPage,
 }

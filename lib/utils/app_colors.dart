@@ -13,5 +13,10 @@ class AppColors{
   static const greenColor=Color(0xff6AC259);
   static const redColor=Color(0xffE92E30);
   static const deepBlue=Color(0xff05518B);
+  static const lightBlue=Color(0xffE6EFFF);
   static const waterishColor=Color(0xff859FD1);
+  static const aliceblueIsh=Color(0xFFE6EFFF);
+  static const pastelGreen=Color(0xFFF0F9EE);
+
+
 }

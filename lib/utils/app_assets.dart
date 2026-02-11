@@ -20,6 +20,11 @@ static const String Events='$png/ic_event.png';
 static const String Logout='$png/ic_logout.png';
 // attendance screen image
 static const String desgin_bg='$png/desgin_bg.png';
+//time table screen image
+static const String lunch_break='$png/lunch_break.png';
+//result screen image
+static const String bg_grade='$png/bg_grade.png';
+static const String img_grade_pertange='$png/img_grade_pertange.png';
 
 }
 

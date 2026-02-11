@@ -8,7 +8,7 @@ import 'package:school_erp/presentation/widgets/person_container.dart';
 import 'package:school_erp/presentation/widgets/question_headers.dart';
 import 'package:school_erp/presentation/widgets/question_option.dart';
 import 'package:school_erp/utils/app_colors.dart';
-import 'package:school_erp/utils/app_helper_method.dart';
+import 'package:school_erp/utils/app_router.dart';
 
 class PlayQuizePage extends StatefulWidget {
   const PlayQuizePage({super.key});
@@ -18,6 +18,7 @@ class PlayQuizePage extends StatefulWidget {
 }
 
 class _PlayQuizePageState extends State<PlayQuizePage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +50,6 @@ class _PlayQuizePageState extends State<PlayQuizePage> {
           Stack(
             clipBehavior: Clip.none,
             children: [
-
               // 🔵 Bottom overlapping layer (shadow design)
               Positioned(
                 bottom: -10,
@@ -164,7 +164,30 @@ class _PlayQuizePageState extends State<PlayQuizePage> {
     );
   }
 }
-class _QuestionCard extends StatelessWidget {
+class _QuestionCard extends StatefulWidget {
+
+  @override
+  State<_QuestionCard> createState() => _QuestionCardState();
+}
+
+class _QuestionCardState extends State<_QuestionCard> {
+  void moveNextScreen(int index){
+    switch(index){
+      case 0:
+        context.goNamed(AppRoute.assigmentPage.name);
+        break;
+      case 1:
+        context.goNamed(AppRoute.timetablePage.name);
+        break;
+      case 2:
+        context.goNamed(AppRoute.resultPage.name);
+        break;
+      case 3:
+        context.goNamed(AppRoute.datesheetPage.name);
+        break;
+
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -209,6 +232,11 @@ class _QuestionCard extends StatelessWidget {
                     title: question.title,
                     icon: question.icon,
                     color: question.color,
+                     ontap: (){
+                    setState(() {
+                      moveNextScreen(index);
+                    });
+                     },
                   );
                 },
               ),
