@@ -25,6 +25,7 @@ static const String lunch_break='$png/lunch_break.png';
 //result screen image
 static const String bg_grade='$png/bg_grade.png';
 static const String img_grade_pertange='$png/img_grade_pertange.png';
+static const String ic_support='$png/ic_support.png';
 
 }
 

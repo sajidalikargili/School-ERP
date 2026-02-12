@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:school_erp/data/assigment_model.dart';
+import 'package:school_erp/data/event_model.dart';
 import 'package:school_erp/data/history_model.dart';
 import 'package:school_erp/data/item_model.dart';
 import 'package:school_erp/data/question_model.dart';
@@ -80,6 +81,13 @@ class HelperMethod{
      AssignmentModel(title: 'Surface Area and  Volume', subject: 'Mathematics', assigmentDate: '10 Nove 20', submitionDate:'10 Dece 20'),
      AssignmentModel(title: 'Surface of Atom', subject: 'Science', assigmentDate: '10 Oct 20', submitionDate:'30 Oct 20'),
      AssignmentModel(title: 'My bestfrined Essay', subject: 'English', assigmentDate: '10 Sep 20', submitionDate:'30 Sep 20')
+   ];
+  }
+  static List<EventModel> geteventLists(){
+   return [
+     EventModel(title: 'Sleepover Night', Date: '06 Jan 21, 09:00 Am', description: 'Lorem Ipsum is simply dummy text \n of the printing and  on layout  \n and design before '),
+     EventModel(title: 'Fishing Tournament', Date: '12 Jan 21, 09:00 Am', description: 'Lorem Ipsum is simply dummy text \n of the printing and  on layout  \n and design before '),
+     EventModel(title: 'Rhyme Time A Night of  Poetry', Date: '24 Jan 21, 09:00 Am', description: 'Lorem Ipsum is simply dummy text \n of the printing and  on layout  \n and design before ')
    ];
   }
 }

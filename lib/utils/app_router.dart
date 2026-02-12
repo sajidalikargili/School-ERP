@@ -1,15 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:school_erp/presentation/pages/ask_doubt.dart';
 import 'package:school_erp/presentation/pages/assigment_page.dart';
+import 'package:school_erp/presentation/pages/chang_password_page.dart';
 import 'package:school_erp/presentation/pages/dasboard_page.dart';
 import 'package:school_erp/presentation/pages/date_sheet_page.dart';
+import 'package:school_erp/presentation/pages/events_page.dart';
+import 'package:school_erp/presentation/pages/feed_details_page.dart';
 import 'package:school_erp/presentation/pages/home_page.dart';
+import 'package:school_erp/presentation/pages/leave_application_page.dart';
 import 'package:school_erp/presentation/pages/online_pay_page.dart';
 import 'package:school_erp/presentation/pages/play_quize_page.dart';
 import 'package:school_erp/presentation/pages/practise_page.dart';
 import 'package:school_erp/presentation/pages/result_page.dart';
+import 'package:school_erp/presentation/pages/school_gallery_page.dart';
 import 'package:school_erp/presentation/pages/signIn_page.dart';
 import 'package:school_erp/presentation/pages/splash_page.dart';
+import 'package:school_erp/presentation/pages/support_page.dart';
 import 'package:school_erp/presentation/pages/time_table_page.dart';
 
 class AppNavigator{
@@ -31,6 +38,14 @@ class AppNavigator{
         GoRoute(path: AppRoute.datesheetPage.path,name: AppRoute.datesheetPage.name,builder: (context,state)=>DateSheetPage()),
         GoRoute(path: AppRoute.timetablePage.path,name: AppRoute.timetablePage.name,builder: (context,state)=>TimeTablePage()),
         GoRoute(path: AppRoute.assigmentPage.path,name: AppRoute.assigmentPage.name,builder: (context,state)=>AssigmentPage()),
+        GoRoute(path: AppRoute.askDoubtsPage.path,name: AppRoute.askDoubtsPage.name,builder: (context,state)=> AskDoubt()),
+        GoRoute(path: AppRoute.schoolgalleryPage.path,name: AppRoute.schoolgalleryPage.name,builder: (context,state)=>SchoolGalleryPage()),
+        GoRoute(path: AppRoute.leaveapplicationPage.path,name: AppRoute.leaveapplicationPage.name,builder: (context,state)=>LeaveApplicationPage()),
+        GoRoute(path: AppRoute.changPasswordPage.path,name: AppRoute.changPasswordPage.name,builder: (context,state)=>ChangPasswordPage()),
+        GoRoute(path: AppRoute.eventsPage.path,name: AppRoute.eventsPage.name,builder: (context,state)=>EventsPage()),
+        GoRoute(path: AppRoute.feedsdetailPage.path,name: AppRoute.feedsdetailPage.name,builder: (context,state)=>FeedDetailsPage()),
+        GoRoute(path: AppRoute.supportPage.path,name: AppRoute.supportPage.name,builder: (context,state)=>SupportPage()),
+
 
       ]);
 
@@ -46,8 +61,16 @@ extension PathName on AppRoute{
    AppRoute.playquizePage=>'/playquize',
     AppRoute.assigmentPage=>'/assigment',
     AppRoute.resultPage=>'/result',
-   AppRoute.timetablePage=>'/timetable',
+    AppRoute.timetablePage=>'/timetable',
     AppRoute.datesheetPage=>'/datesheet',
+   AppRoute.askDoubtsPage=>'/askdoubts',
+    AppRoute.schoolgalleryPage=>'/schoolgallery',
+   AppRoute.leaveapplicationPage=>'/leaveapplication',
+   AppRoute.changPasswordPage=>'/chagePassword',
+   AppRoute.eventsPage=>'/events',
+   AppRoute.feedsdetailPage=>'/feedsdetail',
+   AppRoute.supportPage=>'/supportPage',
+
 
 
   };
@@ -71,4 +94,11 @@ enum AppRoute{
   resultPage,
   timetablePage,
   datesheetPage,
+  askDoubtsPage,
+  schoolgalleryPage,
+  leaveapplicationPage,
+  changPasswordPage,
+  eventsPage,
+  feedsdetailPage,
+  supportPage
 }
